@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../WMC_BACKUP_ORDNER/sj24-25-34aaif-wmc"
+		},
+		{
+			"name": "sj24-25-3aaif-wmc",
+			"path": "../../../../../../WMC_BACKUP/sj24-25-3aaif-wmc"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sj24-25-34aaif-wmc"
+	}
+}

@@ -1,0 +1,140 @@
+/* Allgemeine Stile für den Body */
+body {
+  background-color: rgb(245, 245, 245);
+  /* Sanfteres Hellgrau für den Hintergrund */
+  font-size: 18px;
+  /* Etwas kleinere Schriftgröße für bessere Lesbarkeit */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  /* Konsistente, lesbare Schrift */
+  line-height: 1.6;
+  /* Angenehmer Zeilenabstand für Lesbarkeit */
+}
+
+/* Zentrale Container-Klasse für besseren Layoutfluss */
+.container {
+  width: 80%;
+  /* Begrenzte Breite für eine schönere Darstellung auf großen Bildschirmen */
+  margin: 0 auto;
+  /* Zentriere den Container */
+  padding: 20px;
+  /* Innenabstand für eine luftige Gestaltung */
+  background-color: rgb(255, 255, 255);
+  /* Weißer Hintergrund für den Container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Leichter Schatten für einen eleganten Effekt */
+}
+
+/* Stil für h1 Überschrift */
+h1 {
+  color: rgb(50, 50, 50);
+  /* Sanfteres Dunkelgrau für den Text */
+  font-size: 36px;
+  /* Etwas größere Schriftgröße */
+  text-align: center;
+  /* Zentrierte Ausrichtung */
+  margin: 20px 0;
+  /* Genug Abstand zum oberen und unteren Rand */
+}
+
+/* Stil für h2 Überschrift */
+h2 {
+  color: rgb(70, 70, 70);
+  /* Mittleres Grau für den Text */
+  font-size: 32px;
+  margin: 15px 0;
+  /* Abstand zum Text */
+  border-bottom: 2px solid rgb(200, 200, 200);
+  /* Unterstrich für Struktur */
+  padding-bottom: 10px;
+  /* Abstand unter der Überschrift */
+}
+
+/* Stil für h3 Überschrift */
+h3 {
+  color: rgb(0, 122, 255);
+  /* Lebhafter Blauton für h3 */
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+/* Stil für Absätze */
+p {
+  font-size: 18px;
+  /* Lesbare Größe */
+  color: rgb(100, 100, 100);
+  /* Weiches Grau für den Text */
+  margin: 15px 0;
+  /* Genügend Abstand zwischen Absätzen */
+  max-width: 800px;
+  /* Begrenze die Breite der Absätze für bessere Lesbarkeit */
+}
+
+/* Wähle Anker (a), die sich in einem div befinden */
+div a {
+  color: rgb(0, 122, 255);
+  /* Modernes Blau für Links */
+  text-decoration: none;
+  /* Entferne den Standard-Unterstrich */
+}
+
+div a:hover {
+  text-decoration: underline;
+  /* Unterstreiche Links beim Hover */
+}
+
+/* Wähle Anker (a), die direkte Kinder eines div sind */
+div>a {
+  font-weight: bold;
+  /* Betone direkte Links */
+}
+
+/* Wähle Anker (a), die Geschwister eines div sind und nach dem div kommen */
+div~a {
+  text-decoration: underline;
+  color: rgb(34, 139, 34);
+  /* Ein weiches Grün für Geschwister-Links */
+}
+
+/* Wähle Anker (a), die Geschwister eines div sind und direkt nach dem div kommen */
+div+a {
+  color: rgb(255, 165, 0);
+  /* Orangener Farbton für direkte Geschwister */
+}
+
+/* Wähle alle divs und alle Anker (a) */
+div,
+a {
+  padding: 5px;
+}
+
+/* Wähle alle divs mit der Klasse "c" */
+div.c {
+  background-color: rgb(240, 240, 240);
+  /* Dezentes Grau für Divs mit Klasse "c" */
+  border-radius: 5px;
+  /* Abgerundete Ecken für moderne Optik */
+  padding: 20px;
+  /* Genügend Innenabstand */
+  margin-bottom: 20px;
+  /* Abstand zu anderen Elementen */
+}
+
+/* Zusätzlicher Stil für Buttons */
+button {
+  background-color: rgb(0, 122, 255);
+  /* Modernes Blau */
+  color: white;
+  /* Weißer Text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 100, 210);
+  /* Dunkleres Blau bei Hover */
+}
