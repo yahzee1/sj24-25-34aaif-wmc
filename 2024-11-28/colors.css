@@ -1,0 +1,148 @@
+/* Root Color Variables */
+:root {
+    --color-primary: #00ad6a;
+    --color-secondary: #eafaf1;
+    --color-accent: #1fe374;
+    --color-dark: #080c16;
+    --color-light: #d6dae5;
+    --color-background: #fcfcfc;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-dark);
+}
+
+/* Header Section */
+header {
+    background-color: var(--color-secondary);
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Features Section */
+.features {
+    background-color: var(--color-background);
+    padding: 40px;
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.features li span {
+    color: var(--color-accent);
+    margin-right: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: var(--color-secondary);
+    padding: 40px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 1.8rem;
+}
+
+.pricing p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--color-primary);
+}
+
+/* Testimonial Section */
+.testimonial {
+    background-color: var(--color-background);
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.testimonial cite {
+    font-size: 1rem;
+    color: var(--color-grey);
+}
+
+/* FAQ Section */
+.faq {
+    background-color: var(--color-secondary);
+    padding: 40px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq div {
+    margin-bottom: 20px;
+}
+
+.faq h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
