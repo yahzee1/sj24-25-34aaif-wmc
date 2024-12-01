@@ -1,10 +1,11 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background: #f8f8f8;
+    background: #f3f9f5;
+    line-height: 1.6;
 }
 
 a {
@@ -12,47 +13,56 @@ a {
     color: #25ca85;
 }
 
+a:hover {
+    color: #1ea973;
+}
+
 /* Header */
 .header {
     background: #f8f8f8;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid #eaeaea;
 }
 
-.logo {
+.header .logo {
     height: 40px;
 }
 
-.nav a {
-    margin: 0 15px;
+.header nav .nav-link {
+    margin-right: 15px;
     font-size: 14px;
+    color: #1ea973;
 }
 
-.nav .btn-signup {
-    background: #25ca85;
-    color: white;
+.header nav .nav-link:hover {
+    color: #25ca85;
+}
+
+.header .btn-success {
     padding: 8px 16px;
-    border-radius: 5px;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    background: #f3fcf9;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    background-color: #f3f9f5;
 }
 
 .hero h1 {
     font-size: 36px;
-    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
 }
 
 .hero p {
     font-size: 18px;
     color: #555;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Plans Section */
@@ -66,173 +76,288 @@ a {
 .plan {
     background: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 20px;
     width: 30%;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.plan h3,
-.plan h2 {
-    font-size: 24px;
+.plan h2,
+.plan h3 {
+    font-size: 22px;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .plan .price {
     font-size: 20px;
     font-weight: bold;
     color: #25ca85;
+    margin: 15px 0;
 }
 
 .plan ul {
     text-align: left;
     list-style: none;
     padding: 0;
+    margin: 20px 0;
     font-size: 14px;
+    color: #555;
 }
 
 .plan ul li {
     margin-bottom: 10px;
 }
 
+.plan button {
+    background: #25ca85;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.plan button:hover {
+    background: #1ea973;
+}
+
+.plan.recommended {
+    border: 2px solid #25ca85;
+    position: relative;
+}
+
+.plan.recommended .badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #25ca85;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
 /* Testimonial Section */
 .testimonial {
     text-align: center;
     background: #f3fcf9;
-    padding: 40px 20px;
+    padding: 40px;
 }
 
-blockquote {
+.testimonial blockquote {
     font-size: 18px;
     font-style: italic;
     color: #555;
+    max-width: 600px;
+    margin: 0 auto 10px;
+}
+
+.testimonial cite {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
 }
 
 /* FAQ Section */
 .faq {
     background: #ffffff;
+    /* White background for a clean look */
     padding: 50px 20px;
+    /* Spacious padding */
 }
 
 .faq h2 {
     font-size: 28px;
+    /* Large heading size */
     font-weight: bold;
     margin-bottom: 30px;
-    text-align: left;
+    text-align: center;
+    /* Center the FAQ title */
     color: #333;
+    /* Dark gray text for the title */
 }
 
+/* FAQ Grid */
 .faq-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Responsive grid */
     gap: 20px;
-    max-width: 1200px;
+    /* Space between items */
+    max-width: 900px;
+    /* Centered container width */
     margin: 0 auto;
+    /* Center the grid */
 }
 
+/* Individual FAQ Items */
 .faq-item h3 {
     font-size: 18px;
+    /* Bold question size */
     font-weight: bold;
     margin-bottom: 10px;
     color: #000;
+    /* Black for strong contrast */
 }
 
 .faq-item p {
     font-size: 16px;
+    /* Legible body text size */
     line-height: 1.6;
-    color: #333;
+    color: #555;
+    /* Softer gray for answers */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faq {
+        padding: 30px 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        /* Single column layout on small screens */
+    }
+}
+
+/* Footer */
 .footer {
-    background: #333;
+    background: #000;
+    /* Black background */
     color: #fff;
+    /* White text */
     padding: 40px 20px;
-    position: relative;
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.footer-logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
-
-.cta {
-    display: inline-block;
-    background: #25ca85;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-links {
+    /* Spacing */
     display: flex;
+    flex-wrap: wrap;
+    /* Make it responsive */
     justify-content: space-between;
-    margin: 30px 0;
-    text-align: left;
+    /* Space between sections */
+    align-items: flex-start;
+    /* Align to top */
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    /* Match text size */
 }
 
-.footer-column h4 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-weight: bold;
+.footer .column {
+    margin: 10px 20px;
+    /* Spacing for each column */
+    flex: 1;
+    /* Equal width for columns */
+    min-width: 150px;
+    /* Ensure columns don’t shrink too much */
+}
+
+.footer .column h5 {
     color: #fff;
+    /* White text for headings */
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* Space below heading */
+    text-transform: uppercase;
+    /* Capitalized text */
+    font-size: 14px;
 }
 
-.footer-column ul {
+.footer .column ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.footer-column ul li {
+.footer .column ul li {
     margin-bottom: 10px;
 }
 
-.footer-column ul li a {
+.footer .column ul li a {
     color: #25ca85;
+    /* Green links */
     text-decoration: none;
+    /* No underline */
     font-size: 14px;
 }
 
-.footer-column ul li a:hover {
+.footer .column ul li a:hover {
     text-decoration: underline;
+    /* Add underline on hover */
+}
+
+.footer .btn-footer {
+    background: #25ca85;
+    /* Green background */
+    color: #fff;
+    /* White text */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer .btn-footer:hover {
+    background: #1ea973;
+    /* Darker green on hover */
 }
 
 .footer p {
-    font-size: 14px;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 12px;
     color: #bbb;
+    /* Light gray text */
 }
 
 .footer p a {
     color: #25ca85;
+    /* Green links */
     text-decoration: none;
 }
 
 .footer p a:hover {
     text-decoration: underline;
+    /* Underline on hover */
+}
+
+.footer img {
+    max-width: 120px;
+    /* Logo size */
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        /* Stack columns */
+        align-items: center;
+        /* Center content */
+        text-align: center;
+    }
+
+    .footer .column {
+        margin-bottom: 20px;
+    }
 }
 
 .contact-us {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
     background: #25ca85;
-    color: #fff;
+    color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
 .contact-us:hover {
