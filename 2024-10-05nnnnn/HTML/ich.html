@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <title>ICH</title>
+    <style>
+        /*  hintergrund */
+        body {
+            background-color: rgb(173, 253, 216);
+        }
+
+        /* hintergrundfarben unterschiedliche abschnitte */
+        .section-1 {
+            background-color: rgb(173, 253, 216);
+            /* frühere hintergrundfarbe */
+        }
+
+        .section-2 {
+            background-color: rgb(200, 240, 255);
+            /*  veränderte farbe */
+        }
+
+        /*  button hover farbe */
+        button:hover {
+            background-color: #00aaff;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* button focus farbe */
+        button:focus {
+            outline: 3px solid #ff5500;
+        }
+
+        /* erforderlicher input */
+        input:required {
+            border: 2px solid red;
+        }
+
+        /* cheked checkbox farbe*/
+        input:checked {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- section 1 -->
+    <div class="section-1">
+        <h2>Richard Latak</h2>
+        <p>Tun wir mal so, als wäre hier ein Lebenslauf. :D</p>
+
+        <h3>lebenslauf in schnelldurchlauf</h3>
+
+        <p>
+            <a href="../HTML/prof.html">[ Lebenslauf von Hr. Prof. ]</a>
+        </p>
+    </div>
+    <div class="section-2">
+        <p>
+            Januar 87 geboren, Kindergarten, Volksschule, Gymnasium im 9. Bezirk.<br>
+            Mit 15 oder so HTL Spengergasse mit einem Freund angefangen, Mama war nicht erfreut. :D<br>
+            Ein halbes Semester, viele negative Noten, musste die Spengergasse verlassen.<br>
+            Dann wieder Abendgymnasium bis 18, Arbeiten begonnen.<br>
+            Mit 18 ausgezogen, 14. Hadikgasse, Bürojob bis Ende 2007?<br>
+            2008 Thyssen-Krupp (Stahl), Finanzkrise, fast 500 Minusstunden. :D<br>
+            2010 Maurerhelfer, dann 13 Jahre Installateur-Firma.<br>
+            Sommer 2018 in Ungarn, Oma besucht, ohne Matura...<br>
+            2023 Schule mit Stipendium begonnen.<br>
+        </p>
+    </div>
+
+    <!-- section 1 (zurück zur alten farbe) -->
+    <div class="section-1">
+        <ul>
+            <li><b><i>
+                        <font color="red">hier ein foto von mir</font>
+                    </i></b></li>
+        </ul>
+
+        <!-- bild skaliert -->
+        <img src="../Bilder/3.jpg" style="width: 25%; height: auto;">
+        <br><br>
+
+        <!-- index-link -->
+        <a href="../index.html">[ INDEX ]</a>
+    </div>
+    <div class="section-2">
+        <!-- button mit hover- und focus-effekten -->
+        <br><br>
+        <button>button hover & focus</button>
+
+        <!-- input-feld -->
+        <br><br>
+        <form>
+            <label for="name">name (erforderlich):</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- checked checkbox -->
+            <label for="checkbox">ich stimme den bedingungen zu</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </form>
+    </div>
+
+</body>
+
+</html>
