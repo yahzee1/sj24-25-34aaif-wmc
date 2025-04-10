@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch JSON</title>
+</head>
+<body>
+    <button onclick="fetchData()">Daten holen</button>
+    <textarea id="output" rows="5" cols="30"></textarea>
+
+    <script>
+        function fetchData() {
+            fetch('http://localhost:3000/api/data')
+                .then(res => res.json())
+                .then(data => document.getElementById('output').value = JSON.stringify(data))
+                .catch(err => console.error(err));
+        }
+    </script>
+</body>
+</html>

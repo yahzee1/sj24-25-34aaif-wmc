@@ -1,7 +1,10 @@
-// **HÜ** in `main.js` ein anderes Objekt servieren
-//
-//- in `index.html` mache einen button welcher den Endpoint holt(fetch) und das Json
-//in eine textarea hineinschreibt!
-//
-//Abgabe bis 19.3. 13h
-//////////////////////////////////////////////////////////////////////
+const express = require('express');
+const app = express();
+
+app.use(require('cors')());
+
+app.get('/api/data', (req, res) => {
+    res.json({ message: "Hallo, das ist dein JSON-Objekt!" });
+});
+
+app.listen(3000, () => console.log('Server läuft auf http://localhost:3000'));
